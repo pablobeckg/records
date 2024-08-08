@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="./src/style.css">
+  <title>Music Record App</title>
+</head>
+<body>
+  <header>
+    <nav>
+      <a href=""><h1>My Records</h1></a>
+      <form id="search-form">
+        <input id="search-input" type="search" name="query" placeholder="Search...">
+      </form>
+    </nav>
+  </header>
+  
+  <form id="record-form">
+    <div class="input-wrap">
+      <input type="text" id="record-title" name="record-title" placeholder="Enter record title" required>
+      <input type="text" id="artist-name" name="artist-name" placeholder="Enter artist name" required>
+    </div>
+    <div class="input-wrap">
+      <input type="number" id="record-year" name="record-year" placeholder="Add release year" required min="1948">
+      <input type="text" id="image-input" name="image-input" placeholder="Enter image URL" required>
+    </div>
+    <button class="input-button" id="submit-button" type="submit">Add new record</button>
+    <button class="input-button" id="edit-button" type="button">Edit</button>
+    <div id="records-wrapper"></div>
+  </form>
+  <!-- Modal HTML -->
+  <div id="record-modal" class="modal">
+    <div class="modal-content">
+      <span class="close-button">&times;</span>
+      <div id="edit-record-form">
+        <h1 class="modal-title" id="modal-album-title"></h1>
+        <img id="modal-image" src="" alt="">
+        <h2 class="modal-text" id="modal-artist-name"></h2>
+        <h2 class="modal-text" id="modal-album-year"></h2>
+        <button id="playable-songs">Add playable songs</button>
+        <div id="songs-div">
+          <form action="">
+            <label for="new-song-name-input">Add song name:</label>
+            <input type="text" id="new-song-name-input">
+          </form>
+        </div>
+        <ul id="songs-list"></ul>
+      </div>
+    </div>
+  </div>
+  <script type="module" src="./src/app.ts"></script>
+</body>
+</html>
