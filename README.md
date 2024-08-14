@@ -1,5 +1,7 @@
 # Records App
 
+<img width="991" alt="MyRecords" src="https://github.com/user-attachments/assets/6dd3de3e-84b3-4de9-b68f-36ef88b2ede2">
+
 Welcome to **Records App**, a web application designed to help you manage and explore a collection of records. Whether you're organizing your music library or tracking your vinyl collection, this app provides a user-friendly interface for record management.
 
 ## Table of Contents
